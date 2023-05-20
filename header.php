@@ -5,8 +5,15 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Главная</title>
+	<title>
+		<?php 
+			if(is_404()) {
+				echo 'Ошибка 404';
+			} else {
+				the_title();
+			}
+		?>
+	</title>
   <?php wp_head(); ?>
 </head>
 
@@ -20,14 +27,14 @@
 						<?php the_custom_logo(); ?>
 					</a>
 				</div>
-				<ul>
-					<li><a href="index.html">Главная</a></li>
-					<li><a href="about.html">О компании</a></li>
-					<li><a href="catalog.html">Каталог</a></li>
-					<li><a href="order.html">На заказ</a></li>
-					<li><a href="portfolio.html">Наши работы</a></li>
-					<li><a href="contacts.html">Контакты</a></li>
-				</ul>
+				<?php
+					wp_nav_menu( [
+						'theme_location' => 'top',
+						'container' => '',
+						'menu_class' => '',
+						'menu_id' => ''
+					] );
+				?>
 				<div class="phone">
 					<a href="tel:+79186687673">&#9742; +7 (918) 668-76-73</a>
 				</div>
