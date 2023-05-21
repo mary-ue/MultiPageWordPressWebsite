@@ -10,6 +10,7 @@
     wp_enqueue_style('style', get_stylesheet_uri());
   }
   function add_features() {
+    add_theme_support('post-thumbnails', array('post'));
     add_theme_support( 'custom-logo', array(
       'height'               => 50,
       'width'                => 100,
@@ -18,6 +19,7 @@
       'header-text'          => '',
       'unlink-homepage-logo' => false,
     ) );
+    add_image_size('adv_thumbnail', 100, 100, true);
   }
   function add_menu() {
     register_nav_menu( 'top', 'Главное меню сайта' );
