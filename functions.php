@@ -7,6 +7,12 @@
       wp_enqueue_style('baguetteBox', get_template_directory_uri() . '/assets/css/baguetteBox.min.css');
       wp_enqueue_script('baguetteBox', get_template_directory_uri() . '/assets/js/baguetteBox.min.js', null, null, true);
     }
+    if(is_page_template('templates/contacts.php')) {
+      wp_enqueue_script('list', get_template_directory_uri() . '/assets/js/list.min.js', null, null, true);
+    }
+    if(is_category('doors')) {
+      wp_enqueue_script('mixitup', get_template_directory_uri() . '/assets/js/mixitup.min.js', null, null, true);
+    }
     wp_enqueue_style('style', get_stylesheet_uri());
   }
   function add_features() {
