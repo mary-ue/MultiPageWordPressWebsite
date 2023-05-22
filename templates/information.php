@@ -62,7 +62,6 @@ get_header(); ?>
         wp_reset_postdata();
         ?>
 			</div>
-
 			<!-- Элементы ковки -->
 			<div class="row information_title">
         <div class="col-12">
@@ -91,7 +90,6 @@ get_header(); ?>
         wp_reset_postdata();
         ?>
 			</div>
-			</div>
 			<!-- Цвет -->
 			<div class="row information_title">
         <div class="col-12">
@@ -119,7 +117,6 @@ get_header(); ?>
         }
         wp_reset_postdata();
         ?>
-			</div>
 			</div>
 			<!-- Рисунок МДФ 10мм -->
 			<div class="row information_title">
