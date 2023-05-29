@@ -3,7 +3,7 @@
   add_action( 'after_setup_theme', 'add_features');
   add_action( 'after_setup_theme', 'add_menu');
   function add_scripts_and_styles() {
-    if(is_page_template('templates/portfolio.php')) {
+    if(is_page_template('templates/portfolio.php') || is_single()) {
       wp_enqueue_style('baguetteBox', get_template_directory_uri() . '/assets/css/baguetteBox.min.css');
       wp_enqueue_script('baguetteBox', get_template_directory_uri() . '/assets/js/baguetteBox.min.js', null, null, true);
     }
