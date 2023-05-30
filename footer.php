@@ -9,8 +9,8 @@
 						'container' => '',
 						'items_wrap' => '%3$s'
 					] );
-				?>
-				<span class="accent-color">&copy; </span> Двери Жовнер, 2021
+					?>
+						<span class="accent-color">&copy; </span> <?= bloginfo( 'name' ) ?>, 2020-<?= date('Y');?>
 				</div>
 			</div>
 		</div>

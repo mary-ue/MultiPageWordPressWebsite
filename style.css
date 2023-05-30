@@ -247,6 +247,9 @@ input, textarea {
   justify-content: center;
   padding: 30px 0;
 }
+.popular-goods {
+  justify-content: flex-start;
+}
 .product img {
   width: auto;
   height: 250px;
